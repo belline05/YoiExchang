@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--Content  คือ  เนื้อหาสาระ-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Logo-->
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo" />
+
+        <!--App Name-->
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="@dimen/h1"
+            android:text="@string/chang_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RadioGroup
+            android:padding="@dimen/padding"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--usd to thb-->
+            <RadioButton
+                android:textSize="@dimen/h2"
+                android:checked="true"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="USD to THB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--thb to usd-->
+            <RadioButton
+                android:layout_marginLeft="@dimen/margin"
+                android:textSize="@dimen/h2"
+                android:checked="true"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="THB to USB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RadioGroup>
+
+        <!--text field money-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--Text Field-->
+            <EditText
+                android:hint="@string/usd@android:usd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <!--button exchange-->
+        <Button
+            android:text="Exchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

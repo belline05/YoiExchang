@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Yoi Exchang</string>
+    <string name="chang_money">แลกเปลี่ยนเงินตรา</string>
+
+
+    <string name="usd">กรอกจำนวนเงินดอลล่าร์</string>
+    <string name="thb">กรอกจำนวนเงินไทย</string>
+
+
 </resources>
