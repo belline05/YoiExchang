@@ -6,12 +6,14 @@
 
     <!--Content  คือ  เนื้อหาสาระ-->
     <LinearLayout
+        android:padding="@dimen/padding"
+        android:background="#ffffff"
         android:orientation="vertical"
         android:layout_marginTop="@dimen/margin"
         android:layout_marginRight="@dimen/margin"
         android:layout_marginLeft="@dimen/margin"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <!--Logo-->
         <ImageView
@@ -32,6 +34,8 @@
 
 
         <RadioGroup
+
+            android:id="@+id/ragMoney"
             android:padding="@dimen/padding"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -39,6 +43,7 @@
 
             <!--usd to thb-->
             <RadioButton
+                android:id="@+id/USD"
                 android:textSize="@dimen/h2"
                 android:checked="true"
                 android:textStyle="italic"
@@ -49,9 +54,9 @@
 
             <!--thb to usd-->
             <RadioButton
-                android:layout_marginLeft="@dimen/margin"
+                android:id="@+id/THB"
                 android:textSize="@dimen/h2"
-
+                android:checked="true"
                 android:textStyle="italic"
                 android:textColor="@color/colorPrimaryDark"
                 android:text="THB to USB"
@@ -75,6 +80,9 @@
 
             <!--Text Field-->
             <EditText
+                android:inputType="number"
+                android:textColorHint="#ffffff"
+                android:id="@+id/edtMoney"
                 android:hint="@string/usd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -85,20 +93,22 @@
 
         <!--button exchange-->
         <Button
+            android:id="@+id/btnExchange"
             android:text="test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-
-
+        <!--show rate-->
+<TextView
+    android:id="@+id/txtrate"
+    android:clickable="true"
+    android:textColor="@color/colorAccent"
+    android:textStyle="italic"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center_horizontal"
+    android:textSize="@dimen/h2"
+    android:text="Rate Exchande"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
     </LinearLayout>
-
-
-
-
-
-
-
-
-
 </RelativeLayout>
