@@ -75,7 +75,7 @@
 
             <!--Text Field-->
             <EditText
-                android:hint="@string/usd@android:usd"
+                android:hint="@string/usd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -85,7 +85,7 @@
 
         <!--button exchange-->
         <Button
-            android:text="Exchange"
+            android:text="test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
